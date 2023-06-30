@@ -1,0 +1,4 @@
+- This is a basic madlibs game where users get to select which kind of story they want to tell.
+- After selecting, they will be asked to enter multiple words in their order of appearance in the story.
+- After that, a story will be spit out based on the words they entered.
+- The users will have an option to "replay" the game. 
