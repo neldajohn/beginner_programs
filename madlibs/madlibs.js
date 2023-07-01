@@ -1,7 +1,6 @@
 /*
 Name: Nelda
 Program: Madlibs generator
-
 */
 
 
@@ -9,17 +8,17 @@ Program: Madlibs generator
 const prompt=require("prompt-sync")({sigint:true});
 
 
-//introduce the game
-console.log(`******* MADLIBS GENERATOR *******\n`)
+///----FUNCTIONS-----//
 
 
 //1 = function for bats madlibs
-function Bats (){
+function bats(){
 	//declare variables
 	var myColor, adjective_1, time, adjective_2, place, food_1, food_2,
 	verb, noun, number; 
 
 	// ask user for input
+	console.log("\n");
 	myColor = prompt(`  Color: `);
 	adjective_1 = prompt(`  Adjective: `);
 	time = prompt(`  Time: `);
@@ -32,23 +31,27 @@ function Bats (){
 	number = prompt(`  Number: `);
 
 	//add user's entry to the story
-	let myStory = "\n------ BATS ARE SO COOL! -----" + '\n\t"Bats are so cool! They are ' + myColor + ", " + adjective_1 + " animals which have wings." +
+	let myStory = "\n------ BATS ARE SO COOL! -----" + '\n\t"Bats are so cool! They are ' + 
+	myColor + ", " + adjective_1 + " animals which have wings." +
 	"\n\tThey like to fly around at " + time + " which makes some people scared of them." + 
-	"\n\tBut bats are " + adjective_2  + ", and they don't want to hurt people. \n\tI have a pet bat that lives in " + place + "." + 
-	"\n\tI like to feed him " + food_1 + " and " +  food_2 + ". He likes to " + verb + ". \n\tI am his favorite person, but he also likes " + noun + 
+	"\n\tBut bats are " + adjective_2  + ", and they don't want to hurt people" +
+	". \n\tI have a pet bat that lives in " + place + "." + 
+	"\n\tI like to feed him " + food_1 + " and " +  food_2 + ". He likes to " + verb +
+	 ". \n\tI am his favorite person, but he also likes " + noun + 
 	". \n\tI want to convince my parents to get me " + number + ' more bats."';
 
-	return (myStory);
+	console.log(myStory);
 
 }
 
 // 2 = Function for Halloween madlibs
-function Halloween() {
+function halloween(){
 	// Declare variables
   	var noun_1, noun_2, adjective_1, noun_3, verb, verbing_1, verbing_2,
   	adjective_2, job, candy, adjective_3, adjective_4;
 
   	// Ask user for variables
+  	console.log("\n");
  	noun_1 = prompt("  Noun: ");
   	noun_2 = prompt("  Noun: ");
   	adjective_1 = prompt("  Adjective: ");
@@ -74,16 +77,17 @@ function Halloween() {
 	job + " and he deserves some of your " + candy + ".\n\tYou are " + adjective_3 + 
 	" but you give it to him anyway. Dads are so " + adjective_4 + " but you love him!" ;
 
-	return myStory;
+	console.log(myStory);
 }
 
 //3 = Function for Doctor madlibs
-function Doctor() {
+function doctor(){
   	// Declare variables
   	var adjective_1, place_1, adjective_2, adjective_3, clothing, bodyPart_1,
   	bodyPart_2, bodyPart_3, adjective_4, noun_1, noun_2, place_2, adjective_5;
 
   	// Ask user for variables
+  	console.log("\n");
   	adjective_1 = prompt("  Adjective: ");
  	place_1 = prompt(`  Place: `);
   	adjective_2 = prompt("  Adjective: ");
@@ -110,18 +114,19 @@ function Doctor() {
   	place_2 + " as a treat.\n\tAll in all, the doctor's office isn't so " + 
   	adjective_5 + "!";
 
-  return myStory;
+  	console.log(myStory);
 }
 
 
 //4 = function for China madlibs
-function China (){
+function china(){
 	//declare variables
 	var personName, age, noun, number, verb_1, verb_2, adjective_1,
 	place_1, place_2, place_3, adjective_2, food_1, adjective_3, food_2, drink, 
 	adjective_4, adjective_5; 
 
 	// ask user for variables
+	console.log("\n");
 	personName = prompt(`  Person's name: `);
 	age = prompt(`  Age: `);
 	noun = prompt(`  Noun: `);
@@ -154,17 +159,18 @@ function China (){
 	"time. When it was time to go home, she was very " + adjective_5 + 
 	`.\n\t"!" she said. "Can't we stay longer?`
 
-	return myStory;
+	console.log(myStory);
 }
 
 //5 = Function for storeTrip madlibs
-function storeTrip() {
+function storeTrip(){
 	// Declare variables
 	var holiday, personName_1, verb_1, storeName, noun_1, adjective_1, noun_2,
 	adjective_2, noun_3, adjective_3, noun_4, personName_2, verb_2, verb_3,
 	adjective_4, storeType;
 
 	// Ask user for variables
+	console.log("\n");
 	holiday = prompt("  Holiday: ");
 	personName_1 = prompt("  Person's name: ");
 	verb_1 = prompt("  Verb: ");
@@ -192,625 +198,286 @@ function storeTrip() {
 	personName_2 + ", and " + verb_2 + " them for help.\n\tTheir friend " + verb_3 + 
 	`. "You're in the ` + adjective_4 + ` place!", they said. "This is a ` + storeType + `."`;
 
-	return myStory;
+	console.log(myStory);
 }
 
-// Function for cellPhone madlibs
-function cellPhone() {
-  // Declare variables
-  var adjective_1, adjective_2, noun, verb_1, verb_2, place;
 
-  // Ask user for variables
-  adjective_1 = prompt("  Adjective: ");
-  adjective_2 = prompt("  Adjective: ");
-  noun = prompt("  Noun: ");
-  verb_1 = prompt("  Verb: ");
-  verb_2 = prompt("  Verb: ");
-  place = prompt("  Place: ");
+//6 = Function for School madlibs
+function school(){
+// Declare variables
+	var number, womanName, adjective_1, adjective_2, adjective_3,
+	noun_1, noun_2, noun_3, pNoun,
+	noun_4, adjective_4, noun_5, verb,
+	adjective_5;
 
-  let myStory =
-    "\n------ MY CELL PHONE -----" +
-    "\n\tMy cell phone is a " +
-    adjective_1 +
-    " " +
-    adjective_2 +
-    " " +
-    noun +
-    ". It can " +
-    verb_1 +
-    " and " +
-    verb_2 +
-    "." +
-    "\n\tI take it with me everywhere I go, even to " +
-    place +
-    "." +
-    "\n\tI love my cell phone because it keeps me connected and entertained.";
+	// Ask user for variables
+	console.log("\n");
+	number = prompt("  Number: ");
+	womanName = prompt("  Woman's name: ")
+	adjective_1 = prompt("  Adjective: ");
+	adjective_2 = prompt("  Adjective: ");
+	adjective_3 = prompt("  Adjective: ");
 
-  return myStory;
+	noun_1 = prompt("  Noun: ");
+	noun_2 = prompt("  Noun: ");
+	noun_3 = prompt("  Noun: ");
+	pNoun = prompt("  Plural Noun: ");
+
+	noun_4 = prompt("  Noun: ");
+	adjective_4 = prompt("  Adjective: ");
+	noun_5 = prompt("  Noun: ");
+	verb = prompt("  Verb: ");
+	
+	adjective_5 = prompt("  Adjective: ");
+
+	let myStory =
+	"\n------ MY FIRST DAY OF SCHOOL -----" + 
+	"\n\tToday was my first day of grade " + number + ".\n\tMy teacher is Ms. " + womanName +
+	". She seems " + adjective_1 + " and " + adjective_2 + ".\n\tI think her class will be pretty " +
+	adjective_3 + ". My friends, " + noun_1 + " and " + noun_2 + ", are also in my class." + 
+	"\n\tWe messed around during class by hiding " + noun_3 + " in peoples' " + pNoun +
+	" and asking questions about " + noun_4 + ".\n\tThe teacher got really " + adjective_4 + 
+	" at us and told us that we have to go to the " + noun_5 + ".\n\tThis just made us " + 
+	verb + " more. It was a " + adjective_5 + " first day of school!";
+
+	console.log(myStory);
 }
 
-// Function for Neighbors madlibs
-function Neighbors() {
-  // Declare variables
-  var adjective, noun_1, noun_2, verb, place;
+//7 = Function for Australia madlibs
+function australia(){
+	// Declare variables
+	var noun_1, number, noun_2, food,
+	adjective_1, verb_1, work, noun_2,
+	adjective_2, verb_2, verb_3, adjective_3;
 
-  // Ask user for variables
-  adjective = prompt("  Adjective: ");
-  noun_1 = prompt("  Noun: ");
-  noun_2 = prompt("  Noun: ");
-  verb = prompt("  Verb: ");
-  place = prompt("  Place: ");
+	// Ask user for variables
+	console.log("\n");
+	noun_1 = prompt("  Noun: ");
+	number = prompt("  Number: ");
+	noun_2 = prompt("  Noun: ");
+	food = prompt("  Food: ");
 
-  let myStory =
-    "\n------ MY NEIGHBORS -----" +
-    "\n\tMy neighbors are " +
-    adjective +
-    " " +
-    noun_1 +
-    "s. They live next door and are always " +
-    verb +
-    "." +
-    "\n\tSometimes they borrow things from us, like " +
-    noun_2 +
-    "s." +
-    "\n\tI see them often when I'm outside or when I visit " +
-    place +
-    "." +
-    "\n\tIt's nice to have friendly neighbors.";
+	adjective_1 = prompt("  Adjective: ");
+	verb_1 = prompt("  Verb ending in ing: ");
+	work = prompt("  Work: ");
+	noun_3 = prompt("  Noun: ");
 
-  return myStory;
+	adjective_2 = prompt("  Adjective: ");
+	verb_2 = prompt("  Verb: ");
+	verb_3 = prompt("  Verb: ");
+	adjective_3 = prompt("  Adjective: ");
+	  
+
+	let myStory =
+	"\n------ ADVENTURE IN AUSTRALIA -----" + 
+	"\n\tI decided to go on a vacation to Australia with " + noun_1 +
+	".\n\tWe got to the airport " + number + " hours early.\n\tWhen we went through security, " +
+	"I got stopped because I forgot to take " + noun_2 + " out of my pocket.\n\tWe got some " +
+	food + " for the flight and arrived at the gate.\n\tOnce we boarded the plane, " + 
+	"I was sitting next to a very " + adjective_1 + " man.\n\tHe spent the entire flight " +
+	verb_1 + " and talking about his job doing " + work + " .\n\tWhenever I tried to sleep, " +
+	"he would step around me to go to the " + noun_3 + ".\n\tI was so " + adjective_2 +
+	". Since I couldn't sleep, I decided to " + verb_2 + " and " + verb_3 +
+	" instead.\n\tFinally, we arrived in Australia. All in all, the flight was " + adjective_3 + "!";
+
+	console.log(myStory);
 }
 
-// Function for Neighbors madlibs
-function Concert() {
-  // Declare variables
-  var adjective, noun_1, noun_2, verb, place;
+//8 =  Function for Birthday madlibs
+function birthday(){
+	// Declare variables
+	var personName_1, noun_1, adjective_1, activity,
+	verb, personName_2, noun_2, personName_3, 
+	noun_3, verbPast, songName, adjective_2,
+	adjective_3;
 
-  // Ask user for variables
-  adjective = prompt("  Adjective: ");
-  noun_1 = prompt("  Noun: ");
-  noun_2 = prompt("  Noun: ");
-  verb = prompt("  Verb: ");
-  place = prompt("  Place: ");
+	// Ask user for variables
+	console.log("\n");
+	personName_1 = prompt("  Girl's name: ");
+	noun_1 = prompt("  Noun: ");
+	adjective_1 = prompt("  Adjective: ");
+	activity = prompt("  Activity: ");
 
-  let myStory =
-    "\n------ MY NEIGHBORS -----" +
-    "\n\tMy neighbors are " +
-    adjective +
-    " " +
-    noun_1 +
-    "s. They live next door and are always " +
-    verb +
-    "." +
-    "\n\tSometimes they borrow things from us, like " +
-    noun_2 +
-    "s." +
-    "\n\tI see them often when I'm outside or when I visit " +
-    place +
-    "." +
-    "\n\tIt's nice to have friendly neighbors.";
+	verb = prompt("  Verb: ");
+	personName_2 = prompt("  Person's name: ");
+	noun_2 = prompt("  Noun: ");
+	personName_3 = prompt("  Person's name: ");
 
-  return myStory;
+	noun_3 = prompt("  Noun: ");
+	verbPast = prompt("  Past tense verb: ");
+	songName = prompt("  Song name: ");
+	adjective_2 = prompt("  Adjective: ");
+
+	adjective_3 = prompt("  Adjective: ");
+
+	let myStory = "\n------ BIRTHDAY CELEBRATION -----" + 
+	"\n\tYesterday I went to " + personName_1 +"'s birthday party. I got her a " + noun_1+
+	".\n\tThe party was " + adjective_1 + ". We started by playing " + activity +
+	" and then there was a " + verb + " party.\n\tLots of my friends were there but I " + 
+	"mostly hung out with " + personName_2 + ".\n\tWe talked about " + noun_2 +
+	" and how our friend " + personName_3 + " is a " + noun_3 + ".\n\tDuring cake, everyone " +
+	verbPast + " and sang " + songName + ".\n\tI had a " + adjective_2 + 
+	" time at the party and enjoyed celebrating " + personName_1 + 
+	".\n\tShe is such a " + adjective_3 + " friend.";
+
+	console.log(myStory);
 }
 
-// Function for aboutTime madlibs
-function aboutTime() {
-  // Declare variables
-  var verb_1, verb_2, adjective, noun, place;
+//9 = Function for Beach madlibs
+function beach(){
+	// Declare variables
+	var place, personName, adjective_1, noun_1,
+	noun_2, adjective_2, adjective_3, noun_3,
+	number, noun_4, food, verb;
 
-  // Ask user for variables
-  verb_1 = prompt("  Verb: ");
-  verb_2 = prompt("  Verb: ");
-  adjective = prompt("  Adjective: ");
-  noun = prompt("  Noun: ");
-  place = prompt("  Place: ");
+	// Ask user for variables
+	console.log("\n");
+	place = prompt("  Place: ");
+	personName = prompt("  Person name: ");
+	adjective_1 = prompt("  Adjective: ");
+	noun_1 = prompt("  Noun: ");
 
-  let myStory =
-    "\n------ IT'S ABOUT TIME -----" +
-    "\n\tIt's about time we " +
-    verb_1 +
-    " and " +
-    verb_2 +
-    ". The wait has been " +
-    adjective +
-    "." +
-    "\n\tWe're excited to finally " +
-    noun +
-    " at " +
-    place +
-    ".";
+	noun_2 = prompt("  Noun: ");
+	adjective_2 = prompt("  Adjective: ");
+	adjective_3 = prompt("  Adjective: ");
+	noun_3 = prompt("  Noun: ");
 
-  return myStory;
+	number = prompt("  Number: ");
+	noun_4 = prompt("  Noun: ");
+	food = prompt("  Food: ");
+	verb = prompt("  Verb: ");
+	  
+
+	let myStory = 
+	"\n------ DAY AT THE BEACH -----" + 
+	"\n\tI went to the beach in " + place + " today with " + personName + 
+	". We had a " + adjective_1 + " time.\n\tWe first built a " + noun_1 + 
+	" and then we ran around in the " + noun_2 + " for a little while.\n\tThe water was a bit " +
+	adjective_2 + ". The sun was very " + adjective_3 + " so we made sure to wear a lot of " +
+	noun_3 + ".\n\tWe spent " + number + " hours there.\n\tAt the end of the day, " + 
+	"we treated ourselves to a " + noun_4 + " and had " + food + " for dinner." + 
+	"\n\tI definitely want to go to the beach again but next time I want to " + verb + ".";
+
+	console.log(myStory);
 }
 
-// Function for Coffee madlibs
-function Coffee() {
-  // Declare variables
-  var adjective, noun_1, noun_2, verb, place;
+//10 = Function for Laundry madlibs
+function laundry(){
+	// Declare variables
+	var verb_1, verb_2, noun_1, verb_3,
+	pNoun_1, pNoun_2, noun_2, colorPlural_1,
+	colorPlural_2, number_1, verb_4, verb_5,
+	verb_6, number_2, verb_7, adjective;
 
-  // Ask user for variables
-  adjective = prompt("  Adjective: ");
-  noun_1 = prompt("  Noun: ");
-  noun_2 = prompt("  Noun: ");
-  verb = prompt("  Verb: ");
-  place = prompt("  Place: ");
+	// Ask user for variables
+	console.log("\n");
+	verb_1 = prompt("  Verb: ");
+	verb_2 = prompt("  Verb: ");
+	noun_1 = prompt("  Noun: ");
+	verb_3 = prompt("  Verb: ");
 
-  let myStory =
-    "\n------ COFFEE LOVER -----" +
-    "\n\tI love waking up to the smell of " +
-    adjective +
-    " " +
-    noun_1 +
-    "." +
-    "\n\tI " +
-    verb +
-    " my cup of " +
-    noun_2 +
-    " and head to " +
-    place +
-    " to start my day.";
+	pNoun_1 = prompt("  Plural Noun: ");
+	pNoun_2 = prompt("  Plural Noun: ");
+	noun_2 = prompt("  Noun: ");
+	colorPlural_1 = prompt("  Color Plural: ");
 
-  return myStory;
+	colorPlural_2 = prompt("  Color Plural: ");
+	number_1 = prompt("  Number: ");
+	verb_4 = prompt("  Verb: ");
+	verb_5 = prompt("  Verb: ");
+
+	verb_6 = prompt("  Verb: ");
+	number_2 = prompt("  Number: ");
+	verb_6 = prompt("  Verb: ");
+	adjective = prompt("  Adjective: ");
+	  
+
+	let myStory =  "\n------ LAUNDRY DAY -----" + 
+	    "\n\tIn order to do your laundry, first you have to " + verb_1 + " your clothes." +
+	    "\n\tThen you have to " + verb_2 + " the " + noun_1 + " machine.\n\tTake your time not to " +
+	    verb_3 + " any items that may be gross.\n\tSeparate your " + pNoun_1 + " from your " + 
+	    pNoun_2 + " and then load the " + noun_2 + " machine.\n\tMake sure not to mix the " +
+	    colorPlural_1 + " with the " + colorPlural_2 + ".\n\tSet temperature to " + number_1 +
+	    " and begin the cycle.\n\tAfter that is finished, " + verb_4 + " your clothes and "
+	    + verb_5 + " them in the dryer.\n\tSet the temperature and " + verb_6 + " the dryer. " +
+	    "\n\tAfter about " + number_2 + " minutes, it should be complete!\n\tNow all you have to do is " +
+	    verb_6 + " your clothes and you are all set!\n\t" + adjective + " laundry!";
+
+	console.log(myStory);
 }
 
-// Function for lookItUp madlibs
-function lookItUp() {
-  // Declare variables
-  var verb, noun_1, noun_2, adjective, place;
+function menu(){
+	console.log("----= MENU =----");
+	madLibs = ["Bats are so cool", "Halloween Trick-or-treating", "Going to the doctor",
+		"Visiting China", "A trip to the store", "My first day of school", "Flying to Australia",
+		"Birthday party fun", "Beach day", "How to do laundry"];
 
-  // Ask user for variables
-  verb = prompt("  Verb: ");
-  noun_1 = prompt("  Noun: ");
-  noun_2 = prompt("  Noun: ");
-  adjective = prompt("  Adjective: ");
-  place = prompt("  Place: ");
-
-  let myStory =
-    "\n------ LOOK IT UP -----" +
-    "\n\tWhen I need to " +
-    verb +
-    ", I always grab my " +
-    noun_1 +
-    " and " +
-    noun_2 +
-    "." +
-    "\n\tIt's " +
-    adjective +
-    " to have a resource like that. I can find answers to almost anything!" +
-    "\n\tI enjoy exploring new topics and learning more about " +
-    place +
-    ".";
-
-  return myStory;
+  	for (let i = 0; i < madLibs.length; i++)
+  	{
+  		console.log("\t" + (i+1).toString() + ". " + madLibs[i]);
+  	}
 }
 
-// Function for Goodnight madlibs
-function Goodnight() {
-  // Declare variables
-  var adjective, noun_1, noun_2, verb, place;
 
-  // Ask user for variables
-  adjective = prompt("  Adjective: ");
-  noun_1 = prompt("  Noun: ");
-  noun_2 = prompt("  Noun: ");
-  verb = prompt("  Verb: ");
-  place = prompt("  Place: ");
+//introduce the game
+console.log(`******* MADLIBS GENERATOR *******\n`);
 
-  let myStory =
-    "\n------ GOODNIGHT ROUTINE -----" +
-    "\n\tMy " +
-    adjective +
-    " " +
-    noun_1 +
-    " helps me relax before bedtime." +
-    "\n\tI " +
-    verb +
-    " my " +
-    noun_2 +
-    " and get ready to sleep." +
-    "\n\tI always have sweet dreams about ";
+console.log("\t Please select the madlibs you want to play.");
+//display the menu
+menu();
+
+//ask user for choice
+console.log("\n");
+let choice = parseInt(prompt(`  Enter your choice number: `));
+while (choice < 1 || choice > 10){
+	choice = parseInt(prompt(`  Enter your choice number: `));
+}
+	
+//call the appropriate function
+if (choice == 1){
+	bats();
+}
+else if (choice == 2){
+	halloween();
+}
+else if (choice == 3){
+	doctor();
+}
+else if (choice == 4){
+	china();
+}
+else if (choice == 5){
+	storeTrip();
+}
+else if (choice == 6){
+	school();
+}
+else if (choice == 7){
+	australia();
+}
+else if (choice == 8){
+	birthday();
+}
+else if (choice == 9){
+	beach();
+}
+else{
+	laundry();
 }
 
-// Function for Name madlibs
-function Name() {
-  // Declare variables
-  var adjective, noun, verb, number, place;
+console.log("\n");
 
-  // Ask user for variables
-  adjective = prompt("  Adjective: ");
-  noun = prompt("  Noun: ");
-  verb = prompt("  Verb: ");
-  number = prompt("  Number: ");
-  place = prompt("  Place: ");
 
-  let myStory =
-    "\n------ MY NAME -----" +
-    "\n\tMy name is " +
-    adjective +
-    " " +
-    noun +
-    "." +
-    "\n\tI " +
-    verb +
-    " it when people remember my name." +
-    "\n\tI've met " +
-    number +
-    " people with the same name as mine." +
-    "\n\tIt's a small world! I've met them in " +
-    place +
-    ".";
 
-  return myStory;
-}
 
-// Function for babySitter madlibs
-function babySitter() {
-  // Declare variables
-  var name, adjective, noun, verb, number, place;
 
-  // Ask user for variables
-  name = prompt("  Name: ");
-  adjective = prompt("  Adjective: ");
-  noun = prompt("  Noun: ");
-  verb = prompt("  Verb: ");
-  number = prompt("  Number: ");
-  place = prompt("  Place: ");
 
-  let myStory =
-    "\n------ BABY SITTER -----" +
-    "\n\tMy baby sitter's name is " +
-    name +
-    "." +
-    "\n\tShe is " +
-    adjective +
-    " and always brings " +
-    noun +
-    " to play with." +
-    "\n\tWe " +
-    verb +
-    " a lot and have so much fun." +
-    "\n\tShe has been my baby sitter for " +
-    number +
-    " years." +
-    "\n\tWe love going to " +
-    place +
-    " together.";
 
-  return myStory;
-}
 
-// Function for Oscars madlibs
-function Oscars() {
-  // Declare variables
-  var personName, adjective, noun, verb, place;
 
-  // Ask user for variables
-  personName = prompt("  Person's name: ");
-  adjective = prompt("  Adjective: ");
-  noun = prompt("  Noun: ");
-  verb = prompt("  Verb: ");
-  place = prompt("  Place: ");
 
-  let myStory =
-    "\n------ OSCARS NIGHT -----" +
-    "\n\tIt was Oscars night, and " +
-    personName +
-    " looked " +
-    adjective +
-    " in their " +
-    noun +
-    "." +
-    "\n\tThey " +
-    verb +
-    " the red carpet and headed to " +
-    place +
-    " for the ceremony." +
-    "\n\tEveryone was excited to see who would win the awards.";
 
-  return myStory;
-}
 
-// Function for nurseryRhymes madlibs
-function nurseryRhymes() {
-  // Declare variables
-  var noun, adjective, verb, number, place;
 
-  // Ask user for variables
-  noun = prompt("  Noun: ");
-  adjective = prompt("  Adjective: ");
-  verb = prompt("  Verb: ");
-  number = prompt("  Number: ");
-  place = prompt("  Place: ");
 
-  let myStory =
-    "\n------ NURSERY RHYMES -----" +
-    "\n\t" +
-    noun +
-    " sat on the " +
-    adjective +
-    " wall." +
-    "\n\t" +
-    noun;
-}
 
-// Function for Joe madlibs
-function Joe() {
-  // Declare variables
-  var adjective, noun_1, noun_2, verb, place;
-
-  // Ask user for variables
-  adjective = prompt("  Adjective: ");
-  noun_1 = prompt("  Noun: ");
-  noun_2 = prompt("  Noun: ");
-  verb = prompt("  Verb: ");
-  place = prompt("  Place: ");
-
-  let myStory =
-    "\n------ MEET JOE -----" +
-    "\n\tLet me tell you about Joe. He is " +
-    adjective +
-    " and always carries a " +
-    noun_1 +
-    "." +
-    "\n\tHe loves to " +
-    verb +
-    " and often talks about " +
-    noun_2 +
-    "." +
-    "\n\tWe often meet at " +
-    place +
-    " to catch up.";
-
-  return myStory;
-}
-
-// Function for ballGame madlibs
-function ballGame() {
-  // Declare variables
-  var adjective, noun_1, noun_2, verb, place;
-
-  // Ask user for variables
-  adjective = prompt("  Adjective: ");
-  noun_1 = prompt("  Noun: ");
-  noun_2 = prompt("  Noun: ");
-  verb = prompt("  Verb: ");
-  place = prompt("  Place: ");
-
-  let myStory =
-    "\n------ BALL GAME -----" +
-    "\n\tWe gathered at the " +
-    adjective +
-    " " +
-    noun_1 +
-    " to play a game of " +
-    noun_2 +
-    "." +
-    "\n\tEveryone was excited and ready to " +
-    verb +
-    "." +
-    "\n\tWe had a great time at " +
-    place +
-    ".";
-
-  return myStory;
-}
-
-// Function for Dinner madlibs
-function Dinner() {
-  // Declare variables
-  var adjective, noun_1, noun_2, verb, place;
-
-  // Ask user for variables
-  adjective = prompt("  Adjective: ");
-  noun_1 = prompt("  Noun: ");
-  noun_2 = prompt("  Noun: ");
-  verb = prompt("  Verb: ");
-  place = prompt("  Place: ");
-
-  let myStory =
-    "\n------ DINNER TIME -----" +
-    "\n\tFor dinner, we had " +
-    adjective +
-    " " +
-    noun_1 +
-    "." +
-    "\n\tI " +
-    verb +
-    " my " +
-    noun_2 +
-    " and enjoyed the meal." +
-    "\n\tThe atmosphere at " +
-    place +
-    " was lovely.";
-
-  return myStory;
-}
-
-// Function for Movies madlibs
-function Movies() {
-  // Declare variables
-  var adjective, noun_1, noun_2, verb, place;
-
-  // Ask user for variables
-  adjective = prompt("  Adjective: ");
-  noun_1 = prompt("  Noun: ");
-  noun_2 = prompt("  Noun: ");
-  verb = prompt("  Verb: ");
-  place = prompt("  Place: ");
-
-  let myStory =
-    "\n------ MOVIE NIGHT -----" +
-    "\n\tWe decided to have a " +
-    adjective +
-    " " +
-    noun_1 +
-    " for our movie night." +
-    "\n\tWe " +
-    verb +
-    " the movie on the big " +
-    noun_2 +
-    " and had a great time." +
-    "\n\tWe can't wait";
-}
-
-// Function for School madlibs
-function School() {
-  // Declare variables
-  var adjective, noun, verb, number, place;
-
-  // Ask user for variables
-  adjective = prompt("  Adjective: ");
-  noun = prompt("  Noun: ");
-  verb = prompt("  Verb: ");
-  number = prompt("  Number: ");
-  place = prompt("  Place: ");
-
-  let myStory =
-    "\n------ SCHOOL DAYS -----" +
-    "\n\tSchool is " +
-    adjective +
-    " with " +
-    noun +
-    "." +
-    "\n\tI " +
-    verb +
-    " to school every day and learn so much." +
-    "\n\tThere are " +
-    number +
-    " classrooms and a " +
-    place +
-    " where we play during breaks." +
-    "\n\tI enjoy my time at school.";
-
-  return myStory;
-}
-
-// Function for Australia madlibs
-function Australia() {
-  // Declare variables
-  var adjective, noun, verb, number, place;
-
-  // Ask user for variables
-  adjective = prompt("  Adjective: ");
-  noun = prompt("  Noun: ");
-  verb = prompt("  Verb: ");
-  number = prompt("  Number: ");
-  place = prompt("  Place: ");
-
-  let myStory =
-    "\n------ ADVENTURE IN AUSTRALIA -----" +
-    "\n\tI had an " +
-    adjective +
-    " time exploring " +
-    noun +
-    " in Australia." +
-    "\n\tI " +
-    verb +
-    " with kangaroos and saw " +
-    number +
-    " koalas." +
-    "\n\tThe landscapes were breathtaking, especially in " +
-    place +
-    "." +
-    "\n\tIt was a memorable adventure.";
-
-  return myStory;
-}
-
-// Function for Birthday madlibs
-function Birthday() {
-  // Declare variables
-  var adjective, noun, verb, number, place;
-
-  // Ask user for variables
-  adjective = prompt("  Adjective: ");
-  noun = prompt("  Noun: ");
-  verb = prompt("  Verb: ");
-  number = prompt("  Number: ");
-  place = prompt("  Place: ");
-
-  let myStory =
-    "\n------ BIRTHDAY CELEBRATION -----" +
-    "\n\tOn my birthday, I received " +
-    adjective +
-    " " +
-    noun +
-    " as gifts." +
-    "\n\tI " +
-    verb +
-    " " +
-    number +
-    " candles on my cake and made a wish." +
-    "\n\tWe celebrated at " +
-    place +
-    " with friends and family." +
-    "\n\tIt was a joyous occasion.";
-
-  return myStory;
-}
-
-// Function for Beach madlibs
-function Beach() {
-  // Declare variables
-  var adjective, noun, verb, number, place;
-
-  // Ask user for variables
-  adjective = prompt("  Adjective: ");
-  noun = prompt("  Noun: ");
-  verb = prompt("  Verb: ");
-  number = prompt("  Number: ");
-  place = prompt("  Place: ");
-
-  let myStory =
-    "\n------ DAY AT THE BEACH -----" +
-    "\n\tThe beach is a " +
-    adjective +
-    " place with " +
-    noun +
-    " and " +
-    verb +
-    " waves." +
-    "\n\tI built " +
-    number +
-    " sandcastles and played in the water." +
-    "\n\tThe beach is my favorite ";
-}
-
-// Function for Laundry madlibs
-function laundry() {
-  // Declare variables
-  var adjective_1, noun_1, verb_1, adjective_2, noun_2, verb_2;
-
-  // Ask user for variables
-  adjective_1 = prompt("  Adjective: ");
-  noun_1 = prompt("  Noun: ");
-  verb_1 = prompt("  Verb: ");
-  adjective_2 = prompt("  Adjective: ");
-  noun_2 = prompt("  Noun: ");
-  verb_2 = prompt("  Verb: ");
-
-  let myStory =
-    "\n------ LAUNDRY DAY -----" +
-    "\n\tIt was a " +
-    adjective_1 +
-    " day, and I had a pile of " +
-    noun_1 +
-    " to wash." +
-    "\n\tI decided to " +
-    verb_1 +
-    " the laundry to get it done." +
-    "\n\tAs I sorted the clothes, I found a " +
-    adjective_2 +
-    " " +
-    noun_2 +
-    "." +
-    "\n\tI couldn't help but " +
-    verb_2 +
-    " in surprise." +
-    "\n\tLaundry day turned out to be full of surprises.";
-
-  return myStory;
-}
-
-console.log(storeTrip()) 
-console.log("\n")
