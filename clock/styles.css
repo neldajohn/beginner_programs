@@ -1,0 +1,124 @@
+body {
+    font-family: 'Trebuchet MS';
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 80vh;
+    justify-content: center;
+    position: relative; 
+    color: black;
+    overflow: hidden;
+}
+
+body::before { 
+    content: "";
+    background: url("https://images.unsplash.com/photo-1602615576820-ea14cf3e476a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80");
+    background-size: cover;
+    opacity: 0.9;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: fixed;
+    z-index: -1;
+}
+
+.hr-container {
+    width: 80%; /* Adjust the width as desired */
+    margin: 0 auto; /* Center the container horizontally */
+  }
+
+.styled-hr {
+    border: none;
+    background-color: #000000;
+    height: 3px;
+  }
+
+h1{
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.clock{
+    margin-top: 10px;
+    display: flex;
+}
+
+.clock div{
+    margin: 10px;
+    position: relative;
+}
+
+.clock span{
+    height: 80px;
+    width: 150px;
+    background-color: #e0b5c5;
+    opacity: .8;
+    color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 2px 2px 4px rgba(0,0,0, .3);
+    font-size: 36px; /* Adjust the font size as desired */
+    padding: 10px;
+}
+
+.clock #hour,
+.clock #minutes,
+.clock #seconds {
+    font-size: 60px; /* Adjust the font size as desired */
+    color: black;
+}
+
+
+.clock .text{
+    height: 30px;
+    width: 160px;
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background: #de88a9;
+    opacity: 0.8;
+    font-size: 15px; /* Adjust the font size as desired */
+    padding: 5px;
+
+}
+
+.clock #ampm{
+    bottom: 0;
+    position: absolute;
+    width: 50px;
+    height: 20px;
+    font-size: 20px;
+    background: #de88a9;
+    color: black;
+}
+
+
+.the-date #day,
+.the-date #date,
+.the-date #month,
+.the-date #year {
+    color:#3b3a3a;
+    font-size: 30px;
+}
+
+button{
+    font-family: "Trebuchet MS";
+    color: #000000;
+    background-color: #dd9bb4;
+    font-size: 15px;
+    border-color: #000000;
+    border-style: groove;
+    padding: 15px;
+}
+
+button:hover{
+    color:white;
+    background-color: grey;
+    font-size: 16px;
+}
