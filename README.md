@@ -3,5 +3,9 @@ This repository contains some simple  games I have created as I brush up on my c
 This is also a way for me to create beginner programs/games in new languages that I'm trying out
 
 So far, I have created:
-- A rock, paper, scissors game (Python)
-- Madlibs generator (JavaScript)
+## Python:
+- Rock, paper, scissors
+
+## Javascript:
+- Madlibs generator
+- Digital Clock
