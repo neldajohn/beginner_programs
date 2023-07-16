@@ -4,9 +4,9 @@ This is also a way for me to create beginner programs/games in new languages tha
 
 So far, I have created:
 ## Python:
-- Rock, paper, scissors
+- Rock, paper, scissors (Best out of 3)
 - A Translation program (107 languages)
 
 ## Javascript:
-- Madlibs generator
+- Madlibs generator (5 options)
 - Digital Clock
