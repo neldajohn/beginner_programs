@@ -10,4 +10,4 @@ This program translates text between 107 languages.
 - If it is, the text is translated and returned to the user in a translation booth
 
 
-![example_image](translate/demo_image.png)
+![example_image](demo_image.png)
