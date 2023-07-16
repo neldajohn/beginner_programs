@@ -5,6 +5,7 @@ This is also a way for me to create beginner programs/games in new languages tha
 So far, I have created:
 ## Python:
 - Rock, paper, scissors (Best out of 3)
+- [Rock, Paper, Scissors](./rockpaperscissors)
 - A Translation program (107 languages)
 - An Instagram Bot 
 
