@@ -5,10 +5,10 @@ This is also a way for me to create beginner programs/games in new languages tha
 So far, I have created:
 ## Python:
 - [Rock, Paper, Scissors](./rockpaperscissors)
-- A Translation program (107 languages)
-- An Instagram Bot 
+- [A Translation program (107 languages)](./translate)
+- [An Instagram Bot](./instabot) 
 
 ## Javascript:
-- Madlibs generator (5 options)
-- Digital Clock
-- African Countries Guessing Game
+- [Madlibs Generator](./madlibs)
+- [Digital Clock](./clock)
+- [African Countries Guessing Game](./africa)
