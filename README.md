@@ -6,6 +6,7 @@ So far, I have created:
 ## Python:
 - Rock, paper, scissors (Best out of 3)
 - A Translation program (107 languages)
+- An Instagram Bot 
 
 ## Javascript:
 - Madlibs generator (5 options)
