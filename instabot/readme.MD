@@ -7,6 +7,7 @@ This program generates an instabot that logs into one's account and does the fol
 - Follows both users
 ![image_selected](IMG_5356.jpg)
 - Then messages both users
+![image_selected](IMG_5357.jpg)
 
 
 
