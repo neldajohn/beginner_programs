@@ -11,7 +11,7 @@ from instabot import Bot
 bot = Bot()
 
 #set username and password
-username = 'xxxxxx'
+username = 'bibidi_ilo'
 password = 'xxxxx'
 
 #login
