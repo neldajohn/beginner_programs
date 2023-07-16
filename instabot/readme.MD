@@ -7,12 +7,16 @@ This program generates an instabot that logs into one's account and does the fol
 </div>
 
 
-
-- Randomly selects one celebrity from the each of the "Americans" and "Koreans" lists
+- Randomly selects one celebrity from each of the "Americans" and "Koreans" lists
 - Follows both users
-![image_selected](IMG_5356.jpg)
+<div style="display: flex; justify-content: center;">
+  <img src="IMG_5356.jpg" alt="image_selected" style="max-width: 200px; height: auto; margin-left: auto; margin-right: auto;">
+</div>
+
 - Then messages both users
-![image_selected](IMG_5357.jpg)
+<div style="display: flex; justify-content: center;">
+  <img src="IMG_5357.jpg" alt="image_selected" style="max-width: 200px; height: auto; margin-left: auto; margin-right: auto;">
+</div>
 
 
 
