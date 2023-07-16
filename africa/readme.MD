@@ -5,7 +5,7 @@
 - If correct, the box of the country guessed turns green
 - If not, nothing happens
 
-![game_demo] (africa.png)
+![game_demo](africa.png)
 
 ### Possible ideas for development
 - Add a timer (54 countries in 5 minutes?)
