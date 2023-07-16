@@ -9,3 +9,8 @@
 
 - This is what the clock looks like in a 24-hr format:
 <img width="794" alt="24hr-format" src="https://github.com/neldajohn/random_games/assets/58130223/e397740e-326b-4e6d-8882-8872fc957c66">
+
+
+### Possible ideas for development:
+- Combine with a weather API
+- Add option to change location, which changes the time, date, and weather details
