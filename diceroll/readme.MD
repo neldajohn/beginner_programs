@@ -4,3 +4,7 @@
 
 ![rolling-image](rolling.png)
 
+
+## Ideas for improvement:
+- Use images with a transparent background
+- Maybe show the movement when the dice rolls (like a draw)
