@@ -6,7 +6,8 @@ So far, I have created:
 ## Python:
 - [Rock, Paper, Scissors](./rockpaperscissors)
 - [A Translation program (107 languages)](./translate)
-- [An Instagram Bot](./instabot) 
+- [An Instagram Bot](./instabot)
+- [Dice Rolling](./diceroll)
 
 ## Javascript:
 - [Madlibs Generator](./madlibs)
